@@ -1,0 +1,145 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-11-01 04:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .project:1
+msgid "BanchouPatcher 2.0"
+msgstr ""
+
+#: .project:2
+msgid "xdelta3 GUI written in Gambas3."
+msgstr ""
+
+#: Acerca.form:22
+msgid "Sobre BanchouPatcher"
+msgstr ""
+
+#: Acerca.form:27
+msgid ""
+"BanchouPatcher es un asistente de asignación de parches para archivos que "
+"utiliza xdelta3 para trabajar.\n"
+"<br /><br />\n"
+"Desde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a "
+"PatchForLinux y a Zenity.\n"
+"<br /><br />\n"
+"BanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en "
+"el código fuente de este software.\n"
+"<br /><br />\n"
+"Puedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de "
+"las siguientes direcciones:\n"
+"<br /><br />\n"
+"-Gargadon's Dungeon: http://www.gargadon.info/<br />\n"
+"-GitHub: https://github.com/Gargadon/BanchouPatcher"
+msgstr ""
+
+#: Acerca.form:41
+msgid "OK"
+msgstr ""
+
+#: FMain.form:26
+msgid "Ayuda"
+msgstr ""
+
+#: FMain.form:29
+msgid "Acerca de..."
+msgstr ""
+
+#: FMain.form:34
+msgid "Salir"
+msgstr ""
+
+#: FMain.form:41
+msgid "Abrir archivo origen"
+msgstr ""
+
+#: FMain.form:46
+msgid "Abrir archivo destino"
+msgstr ""
+
+#: FMain.form:51
+msgid "Origen"
+msgstr ""
+
+#: FMain.form:56
+msgid "Destino"
+msgstr ""
+
+#: FMain.form:61
+msgid "Comprimir archivos en .zip"
+msgstr ""
+
+#: FMain.form:67
+msgid ""
+"Nombre del\n"
+"parche"
+msgstr ""
+
+#: FMain.form:72
+msgid "Nombre del parche"
+msgstr ""
+
+#: FMain.form:77
+msgid "Abrir directorio destino"
+msgstr ""
+
+#: FMain.form:82
+msgid "Directorio"
+msgstr ""
+
+#: FMain.form:87
+msgid "Listo."
+msgstr ""
+
+#: FMain.form:96
+msgid "PATCH!!!1"
+msgstr ""
+
+#: FMain.class:63
+msgid ""
+"MUY IMPORTANTE\n"
+"\n"
+"Usuarios de Windows:\n"
+"Copien el archivo a parchar y ejecuten el .bat que viene incluido.\n"
+"\n"
+"Usuarios de Linux:\n"
+"Asegúrense de tener instalada en su distribución el paquete xdelta3. Una vez "
+"revisado este punto, copien el archivo a parchar y ejecuten el script en "
+"Bash que viene incluido.\n"
+"\n"
+"Usuarios de Mac:\n"
+"No hay solución por el momento."
+msgstr ""
+
+#: FMain.class:65
+msgid "Los campos no pueden ir por defecto."
+msgstr ""
+
+#: FMain.class:67
+msgid "Creando scripts del parche..."
+msgstr ""
+
+#: FMain.class:71
+msgid ""
+"No se puede crear el parche. Verifique los permisos del directorio destino o "
+"pruebe otra ubicación."
+msgstr ""
+
+#: FMain.class:78
+msgid "Creando parche..."
+msgstr ""
+
+#: FMain.class:94
+msgid "Empaquetando archivos intermedios dentro de un ZIP..."
+msgstr ""
+
+#: FMain.class:99
+msgid "Borrando archivos intermedios..."
+msgstr ""

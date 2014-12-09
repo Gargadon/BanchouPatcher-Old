@@ -1,0 +1,117 @@
+' Gambas class file
+
+Public Sub _new()
+
+End
+
+Public Sub Form_Open()
+
+End
+
+Public Sub Origen_MouseDown()
+
+  
+
+End
+
+Public Sub Destino_MouseDown()
+
+  
+
+End
+
+Public Sub Exit_Click()
+
+  Me.close
+
+End
+
+Public Sub Comprimir_Click()
+
+  
+
+End
+
+Public Sub FileOrigen_Click()
+
+  If Dialog.OpenFile() Then Return
+  FileOrigen.Text = Dialog.Path
+
+End
+
+Public Sub FileDestino_Click()
+
+  If Dialog.OpenFile() Then Return
+  FileDestino.Text = Dialog.Path
+
+End
+
+Public Sub DirDestino_Click()
+
+  If Dialog.SelectDirectory() Then Return
+  DirDestino.Text = Dialog.Path
+
+End
+
+Public Sub PatchNow_Click()
+  Dim PathOrigen As String = FileOrigen.Text
+  Dim NombreOrigen As String = File.Name(FileOrigen.Text)
+  Dim PathDestino As String = FileDestino.Text
+  Dim NombreDestino As String = File.Name(FileDestino.Text)
+  Dim DirParche As String = DirDestino.Text
+  Dim PrefijoParche As String = Prefijo.Text
+  Dim TextoLeeme As String = ("MUY IMPORTANTE\n\nUsuarios de Windows:\nCopien el archivo a parchar y ejecuten el .bat que viene incluido.\n\nUsuarios de Linux:\nAsegúrense de tener instalada en su distribución el paquete xdelta3. Una vez revisado este punto, copien el archivo a parchar y ejecuten el script en Bash que viene incluido.\n\nUsuarios de Mac:\nNo hay solución por el momento.")
+    If PathOrigen = ("Abrir archivo origen") Or PathDestino = ("Abrir archivo destino") Or DirParche = ("Nombre del parche") Or PrefijoParche = ("Abrir directorio destino") Then
+    Estado.Text = ("Los campos no pueden ir por defecto.")
+    Else
+  Estado.Text = ("Creando scripts del parche...")
+  ' Creamos los scripts...
+  Try File.Save(DirParche &/ PrefijoParche & ".bat", "@echo off\nxdelta3 -d -s" & " '" & NombreOrigen & "'" & " '" & PrefijoParche & ".vcdiff'" & " '" & NombreDestino & "'\npause")
+  If Error Then
+    Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
+  Endif
+  Try File.Save(DirParche &/ PrefijoParche, "#!/bin/bash\necho \" Archivo generado por BanchouPatcher.\"\nxdelta3 -d -s" & " '" & NombreOrigen & "'" & " '" & PrefijoParche & ".vcdiff'" & " '" & NombreDestino & "'\nif [ \" $? \" = \" 0 \"]; then echo \"Parche aplicado correctamente.\" \nelse\necho \"Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio\" 1 > &2 \nexit 1\nfi ")
+  If Error Then
+    Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
+  Endif
+  ' Creamos el parche...
+  Estado.Text = ("Creando parche...")
+  Try Exec ["xdelta3", "-e", "-s", PathOrigen, PathDestino, DirParche &/ PrefijoParche & ".vcdiff"] Wait
+  If Error Then
+    Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
+  Endif
+  ' Ponemos permisos de ejecutable al archivo...
+   Try Exec ["chmod", "+x", DirParche &/ PrefijoParche] Wait
+  If Error Then
+    Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
+  Endif
+      Try File.Save(DirParche &/ "leeme.txt", TextoLeeme)
+    If Error Then
+    Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
+    Endif
+    Copy "/opt/BanchouPatcher/xdelta3.exe" To DirParche &/ "xdelta3.exe"
+  If Comprimir.Value = True Then
+    Estado.Text = ("Empaquetando archivos intermedios dentro de un ZIP...")
+    Try Exec ["zip", "-j", DirParche &/ PrefijoParche & ".zip", DirParche &/ PrefijoParche & ".vcdiff", DirParche &/ PrefijoParche, DirParche &/ PrefijoParche & ".bat", DirParche &/ "leeme.txt", DirParche &/ "xdelta3.exe"] Wait
+      If Error Then
+    Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
+    Else
+          Estado.Text = ("Borrando archivos intermedios...")
+          Kill DirParche &/ PrefijoParche & ".vcdiff"
+          Kill DirParche &/ PrefijoParche & ".bat"
+          Kill DirParche &/ PrefijoParche
+          Kill DirParche &/ "leeme.txt"
+          Kill DirParche &/ "xdelta3.exe"
+  Endif
+
+    Endif
+      Estado.Text = ("Listo.")
+  Endif
+
+End
+
+Public Sub About_Click()
+
+  Acerca.Show
+
+End
