@@ -1,14 +1,12 @@
 # Gambas Project File 3.0
-# Compiled with Gambas 3.5.4
-Title=BanchouPatcher 2.0
+# Compiled with Gambas 3.7.1
+Title=BanchouPatcher
 Startup=FMain
 Icon=banchoupatcher.png
-Version=2.0.0
+Version=2.0.3
 Component=gb.image
 Component=gb.gui
 Component=gb.form
-Component=gb.gui.opengl
-Component=gb.opengl
 Description="xdelta3 GUI written in Gambas3."
 Authors="David Kantun (Gargadon)"
 TabSize=2
@@ -18,11 +16,17 @@ Maintainer=David Kantun (Gargadon)
 Address=dkantun@gmail.com
 Url=www.gargadon.info
 License=General Public License
-PackageName=banchoupatcher-2.0.0
+PackageName=banchoupatcher-2.0.3
+PackageVersion=3
+CreateEachDirectory=1
 Packager=1
-Systems=debian
+Systems=autotools,debian
 Menus=debian:"Applications/Data Management"
 Categories=debian:"Utility"
 Groups=debian:"utils"
-ExtraDependencies=debian:"zip\t\t\nxdelta3\t\t\ngambas3-gb-gui-opengl\t\t\ngambas3-gb-opengl\t\t"
+ExtraDependencies=debian:"zip\t\t\nxdelta3\t\t\ngambas3-gb-gui\t3.1.1-2\t\ngambas3-gb-image\t3.1.1-2\t\ngambas3-runtime\t3.1.1-2\t\ngambas3-gb-form\t3.1.1-2\t"
 ExtraFiles=debian:"xdelta3.exe\t/opt/BanchouPatcher"
+Menus=ubuntu:"Applications/Data Management"
+Groups=ubuntu:"utils"
+ExtraDependencies=ubuntu:"zip\t\t\nxdelta3\t\t\ngambas3-gb-gui-opengl\t\t\ngambas3-gb-opengl\t\t"
+ExtraFiles=ubuntu:"xdelta3.exe\t/opt/BanchouPatcher"

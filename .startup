@@ -1,12 +1,10 @@
 FMain
-BanchouPatcher 2.0
+BanchouPatcher
 0
 0
-2.0.0
+2.0.3
 
 gb.image
 gb.gui
 gb.form
-gb.gui.opengl
-gb.opengl
 

@@ -2,12 +2,11 @@
 
 { Form Form
   MoveScaled(0,0,88,63)
-  Font = Font["Droid Sans"]
   Icon = Picture["banchoupatcher.png"]
   { Help Menu
     Text = ("Ayuda")
     { About Menu
-      Text = ("Acerca de...")
+      Text = ("Acerca de") & "..."
       Shortcut = "Ctrl+H"
     }
     { Exit Menu

@@ -2,14 +2,13 @@
 
 { Form Form
   MoveScaled(0,0,53,55)
-  Font = Font["Droid Sans"]
   Icon = Picture["banchoupatcher.png"]
   Resizable = False
   Arrangement = Arrange.Vertical
   Spacing = True
   Margin = True
   { Label1 Label
-    MoveScaled(1,1,34,5)
+    MoveScaled(1,1,45,5)
     Font = Font["Bold,+4"]
     Text = ("Sobre BanchouPatcher")
   }
@@ -20,10 +19,6 @@
   { HBox1 HBox
     MoveScaled(4,45,45,4)
     Spacing = True
-    { Panel1 Panel
-      MoveScaled(4,0,4,4)
-      Expand = True
-    }
     { btnOK Button
       MoveScaled(14,0,16,4)
       Text = ("OK")

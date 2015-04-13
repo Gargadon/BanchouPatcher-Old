@@ -2,12 +2,12 @@
 
 { Form Form
   MoveScaled(0,0,88,63)
-  Font = Font["Droid Sans"]
+  Font = Font["Droid Sans,10"]
   Icon = Picture["banchoupatcher.png"]
   { Help Menu
     Text = ("Ayuda")
     { About Menu
-      Text = ("Acerca de...")
+      Text = ("Acerca de") & "..."
       Shortcut = "Ctrl+H"
     }
     { Exit Menu
@@ -34,11 +34,6 @@
   { Comprimir CheckBox
     MoveScaled(51,34,29,5)
     Text = ("Comprimir archivos en .zip")
-    Value = CheckBox.True
-  }
-  { BorrarIntermedio CheckBox
-    MoveScaled(8,35,41,3)
-    Text = ("Borrar archivos intermedios")
     Value = CheckBox.True
   }
   { Nombre Label
