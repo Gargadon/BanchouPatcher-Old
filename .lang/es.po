@@ -12,18 +12,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: .project:1
-msgid "BanchouPatcher 2.0"
-msgstr "-"
+msgid "BanchouPatcher"
+msgstr "BanchouPatcher"
 
-#: Acerca.form:22
+#: .project:2
+msgid "xdelta3 GUI written in Gambas3."
+msgstr "GUI para xdelta3 escrito en Gambas3."
+
+#: Acerca.form:20
 msgid "Sobre BanchouPatcher"
 msgstr "Sobre BanchouPatcher"
 
-#: Acerca.form:27
+#: Acerca.form:25
 msgid "BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n<br /><br />\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n<br /><br />\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n<br /><br />\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n<br /><br />\n-Gargadon's Dungeon: http://www.gargadon.info/<br />\n-GitHub: https://github.com/Gargadon/BanchouPatcher"
 msgstr "BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n<br /><br />\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n<br /><br />\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n<br /><br />\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n<br /><br />\n-Gargadon's Dungeon: http://www.gargadon.info/<br />\n-GitHub: https://github.com/Gargadon/BanchouPatcher"
 
-#: Acerca.form:41
+#: Acerca.form:34
 msgid "OK"
 msgstr "OK"
 
@@ -55,59 +59,59 @@ msgstr "Empaquetando archivos intermedios dentro de un ZIP..."
 msgid "Borrando archivos intermedios..."
 msgstr "Borrando archivos intermedios..."
 
-#: FMain.form:26
+#: FMain.form:25
 msgid "Ayuda"
 msgstr "Ayuda"
 
-#: FMain.form:29
-msgid "Acerca de..."
-msgstr "Acerca de..."
+#: FMain.form:28
+msgid "Acerca de"
+msgstr "Acerca de"
 
-#: FMain.form:34
+#: FMain.form:33
 msgid "Salir"
 msgstr "Salir"
 
-#: FMain.form:41
+#: FMain.form:40
 msgid "Abrir archivo origen"
 msgstr "Abrir archivo origen"
 
-#: FMain.form:46
+#: FMain.form:45
 msgid "Abrir archivo destino"
 msgstr "Abrir archivo destino"
 
-#: FMain.form:51
+#: FMain.form:50
 msgid "Origen"
 msgstr "Origen"
 
-#: FMain.form:56
+#: FMain.form:55
 msgid "Destino"
 msgstr "Destino"
 
-#: FMain.form:61
+#: FMain.form:60
 msgid "Comprimir archivos en .zip"
 msgstr "Comprimir archivos en .zip"
 
-#: FMain.form:67
+#: FMain.form:66
 msgid "Nombre del\nparche"
 msgstr "Nombre del\nparche"
 
-#: FMain.form:72
+#: FMain.form:71
 msgid "Nombre del parche"
 msgstr "Nombre del parche"
 
-#: FMain.form:77
+#: FMain.form:76
 msgid "Abrir directorio destino"
 msgstr "Abrir directorio destino"
 
-#: FMain.form:82
+#: FMain.form:81
 msgid "Directorio"
 msgstr "Directorio"
 
-#: FMain.form:87
+#: FMain.form:86
 msgid "Listo."
 msgstr "Listo."
 
-#: FMain.form:96
+#: FMain.form:95
 msgid "PATCH!!!1"
 msgstr "PATCH!!!1"
 

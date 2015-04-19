@@ -1,24 +1,22 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"#-#-#-#-#  Acerca.pot ($(PACKAGE) $(VERSION))  #-#-#-#-#\n"
-"Project-Id-Version: $(PACKAGE) $(VERSION)\n"
-"POT-Creation-Date: 2015-04-13 01:19 UTC\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-11-01 04:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  FMain.pot ($(PACKAGE) $(VERSION))  #-#-#-#-#\n"
-"Project-Id-Version: $(PACKAGE) $(VERSION)\n"
-"POT-Creation-Date: 2015-04-13 01:19 UTC\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  #project.pot (BanchouPatcher 3.7.1)  #-#-#-#-#\n"
-"Project-Id-Version: BanchouPatcher 3.7.1\n"
-"POT-Creation-Date: 2015-04-13 01:19 UTC\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+
+#: .project:1
+msgid "BanchouPatcher"
+msgstr ""
+
+#: .project:2
+msgid "xdelta3 GUI written in Gambas3."
+msgstr ""
 
 #: Acerca.form:20
 msgid "Sobre BanchouPatcher"
@@ -144,12 +142,4 @@ msgstr ""
 
 #: FMain.class:99
 msgid "Borrando archivos intermedios..."
-msgstr ""
-
-#: .project:1
-msgid "BanchouPatcher"
-msgstr ""
-
-#: .project:2
-msgid "xdelta3 GUI written in Gambas3."
 msgstr ""

@@ -3,12 +3,13 @@
 { Form Form
   MoveScaled(0,0,53,55)
   Icon = Picture["banchoupatcher.png"]
+  Persistent = True
   Resizable = False
   Arrangement = Arrange.Vertical
   Spacing = True
   Margin = True
   { Label1 Label
-    MoveScaled(1,1,34,5)
+    MoveScaled(1,1,45,5)
     Font = Font["Bold,+4"]
     Text = ("Sobre BanchouPatcher")
   }

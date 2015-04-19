@@ -66,11 +66,11 @@ Public Sub PatchNow_Click()
     Else
   Estado.Text = ("Creando scripts del parche...")
   ' Creamos los scripts...
-  Try File.Save(DirParche &/ PrefijoParche & ".bat", "@echo off\n Archivo generado por BanchouPatcher.\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\npause")
+  Try File.Save(DirParche &/ PrefijoParche & ".bat", "@echo off\necho  Archivo generado por BanchouPatcher.\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\npause")
   If Error Then
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
-  Try File.Save(DirParche &/ PrefijoParche, "#!/bin/bash\necho \" Archivo generado por BanchouPatcher.\"\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\nif [ \" $? \" = \" 0 \"]; then echo \"Parche aplicado correctamente.\" \nelse\necho \"Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio\" 1 > &2 \nexit 1\nfi ")
+  Try File.Save(DirParche &/ PrefijoParche, "#!/bin/bash\necho \" Archivo generado por BanchouPatcher.\"\necho \" Archivo de origen: " & NombreOrigen & "\"\necho \" Archivo de destino: " & NombreDestino & "\"\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\nif [ \"$?\" = \"0\" ]; then echo \" Parche aplicado correctamente.\" \nelse\necho \" Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio.\"\nfi ")
   If Error Then
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
