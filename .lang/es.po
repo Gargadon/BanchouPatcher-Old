@@ -19,15 +19,15 @@ msgstr "BanchouPatcher"
 msgid "xdelta3 GUI written in Gambas3."
 msgstr "GUI para xdelta3 escrito en Gambas3."
 
-#: Acerca.form:20
+#: Acerca.form:10
 msgid "Sobre BanchouPatcher"
 msgstr "Sobre BanchouPatcher"
 
-#: Acerca.form:25
-msgid "BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n<br /><br />\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n<br /><br />\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n<br /><br />\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n<br /><br />\n-Gargadon's Dungeon: http://www.gargadon.info/<br />\n-GitHub: https://github.com/Gargadon/BanchouPatcher"
-msgstr "BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n<br /><br />\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n<br /><br />\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n<br /><br />\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n<br /><br />\n-Gargadon's Dungeon: http://www.gargadon.info/<br />\n-GitHub: https://github.com/Gargadon/BanchouPatcher"
+#: Acerca.form:24
+msgid "BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n\n-Gargadon's Dungeon: http://www.gargadon.info/\n-GitHub: https://github.com/Gargadon/BanchouPatcher\n-Correo electrónico: webmaster@gargadon.info"
+msgstr "BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n\n-Gargadon's Dungeon: http://www.gargadon.info/\n-GitHub: https://github.com/Gargadon/BanchouPatcher\n-Correo electrónico: webmaster@gargadon.info"
 
-#: Acerca.form:34
+#: Acerca.form:32
 msgid "OK"
 msgstr "OK"
 
@@ -64,8 +64,8 @@ msgid "Ayuda"
 msgstr "Ayuda"
 
 #: FMain.form:28
-msgid "Acerca de"
-msgstr "Acerca de"
+msgid "Acerca de..."
+msgstr "Acerca de..."
 
 #: FMain.form:33
 msgid "Salir"
@@ -88,8 +88,8 @@ msgid "Destino"
 msgstr "Destino"
 
 #: FMain.form:60
-msgid "Comprimir archivos en .zip"
-msgstr "Comprimir archivos en .zip"
+msgid "Comprimir archivos en .zip y eliminar archivos intermedios"
+msgstr "Comprimir archivos en .zip y eliminar archivos intermedios"
 
 #: FMain.form:66
 msgid "Nombre del\nparche"

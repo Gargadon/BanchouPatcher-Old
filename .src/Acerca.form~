@@ -1,29 +1,27 @@
 # Gambas Form File 3.0
 
 { Form Form
-  MoveScaled(0,0,53,55)
+  MoveScaled(0,0,77,44)
+  Text = ("Sobre BanchouPatcher")
   Icon = Picture["banchoupatcher.png"]
-  Persistent = True
   Resizable = False
-  Arrangement = Arrange.Vertical
   Spacing = True
   Margin = True
-  { Label1 Label
-    MoveScaled(1,1,45,5)
-    Font = Font["Bold,+4"]
-    Text = ("Sobre BanchouPatcher")
+  { PictureBox1 PictureBox
+    MoveScaled(2,3,19.2857,36.1429)
+    Picture = Picture["musashi-miyamoto-sw.jpg"]
   }
-  { TextLabel1 TextLabel
-    MoveScaled(1,7,48,38)
-    Text = ("BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n<br /><br />\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n<br /><br />\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n<br /><br />\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n<br /><br />\n-Gargadon's Dungeon: http://www.gargadon.info/<br />\n-GitHub: https://github.com/Gargadon/BanchouPatcher")
+  { TextArea1 TextArea
+    MoveScaled(24,4,51,30)
+    Background = Color.Background
+    Text = ("BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n\n-Gargadon's Dungeon: http://www.gargadon.info/\n-GitHub: https://github.com/Gargadon/BanchouPatcher\n-Correo electrónico: webmaster@gargadon.info")
+    ReadOnly = True
+    Wrap = True
+    Border = False
   }
-  { HBox1 HBox
-    MoveScaled(4,45,45,4)
-    Spacing = True
-    { btnOK Button
-      MoveScaled(14,0,16,4)
-      Text = ("OK")
-      Default = True
-    }
+  { btnOK Button
+    MoveScaled(40,35,16,4)
+    Text = ("OK")
+    Default = True
   }
 }

@@ -14,15 +14,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Acerca.form:20
+#: Acerca.form:10
 msgid "Sobre BanchouPatcher"
 msgstr ""
 
-#: Acerca.form:25
-msgid "BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n<br /><br />\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n<br /><br />\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n<br /><br />\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n<br /><br />\n-Gargadon's Dungeon: http://www.gargadon.info/<br />\n-GitHub: https://github.com/Gargadon/BanchouPatcher"
+#: Acerca.form:24
+msgid "BanchouPatcher es un asistente de asignación de parches para archivos que utiliza xdelta3 para trabajar.\n\nDesde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a PatchForLinux y a Zenity.\n\nBanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en el código fuente de este software.\n\nPuedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de las siguientes direcciones:\n\n-Gargadon's Dungeon: http://www.gargadon.info/\n-GitHub: https://github.com/Gargadon/BanchouPatcher\n-Correo electrónico: webmaster@gargadon.info"
 msgstr ""
 
-#: Acerca.form:34
+#: Acerca.form:32
 msgid "OK"
 msgstr ""
 

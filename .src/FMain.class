@@ -66,7 +66,7 @@ Public Sub PatchNow_Click()
     Else
   Estado.Text = ("Creando scripts del parche...")
   ' Creamos los scripts...
-  Try File.Save(DirParche &/ PrefijoParche & ".bat", "@echo off\necho  Archivo generado por BanchouPatcher.\necho  Archivo de origen: " & NombreOrigen & "\necho  Archivo de destino:" & NombreDestino & "\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\npause")
+  Try File.Save(DirParche &/ PrefijoParche & ".bat", "@echo off\necho  Archivo generado por BanchouPatcher.\necho  Archivo de origen: " & NombreOrigen & "\necho  Archivo de destino: " & NombreDestino & "\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\npause")
   If Error Then
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
@@ -112,6 +112,6 @@ End
 
 Public Sub About_Click()
 
-  Acerca.Show
+  Acerca.ShowModal
 
 End

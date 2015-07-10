@@ -18,29 +18,30 @@ msgstr ""
 msgid "xdelta3 GUI written in Gambas3."
 msgstr ""
 
-#: Acerca.form:20
+#: Acerca.form:10
 msgid "Sobre BanchouPatcher"
 msgstr ""
 
-#: Acerca.form:25
+#: Acerca.form:24
 msgid ""
 "BanchouPatcher es un asistente de asignación de parches para archivos que "
 "utiliza xdelta3 para trabajar.\n"
-"<br /><br />\n"
+"\n"
 "Desde la versión 2.0, está realizado enteramente en Gambas3, sustituyendo a "
 "PatchForLinux y a Zenity.\n"
-"<br /><br />\n"
+"\n"
 "BanchouPatcher está liberado bajo la licencia GPLv2, la cual se incluye en "
 "el código fuente de este software.\n"
-"<br /><br />\n"
+"\n"
 "Puedes colaborar con la mejora de BanchouPatcher entrando a cualquiera de "
 "las siguientes direcciones:\n"
-"<br /><br />\n"
-"-Gargadon's Dungeon: http://www.gargadon.info/<br />\n"
-"-GitHub: https://github.com/Gargadon/BanchouPatcher"
+"\n"
+"-Gargadon's Dungeon: http://www.gargadon.info/\n"
+"-GitHub: https://github.com/Gargadon/BanchouPatcher\n"
+"-Correo electrónico: webmaster@gargadon.info"
 msgstr ""
 
-#: Acerca.form:34
+#: Acerca.form:32
 msgid "OK"
 msgstr ""
 
@@ -49,7 +50,7 @@ msgid "Ayuda"
 msgstr ""
 
 #: FMain.form:28
-msgid "Acerca de"
+msgid "Acerca de..."
 msgstr ""
 
 #: FMain.form:33
@@ -73,7 +74,7 @@ msgid "Destino"
 msgstr ""
 
 #: FMain.form:60
-msgid "Comprimir archivos en .zip"
+msgid "Comprimir archivos en .zip y eliminar archivos intermedios"
 msgstr ""
 
 #: FMain.form:66

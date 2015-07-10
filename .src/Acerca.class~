@@ -8,7 +8,7 @@ End
 
 Public Sub btnOK_Click()
 
-  Me.Close(TRUE)
+  Me.Close(True)
 
 End
 
@@ -18,3 +18,9 @@ Public Sub btnCancel_Click()
 
 End
 
+
+Public Sub Form_Open()
+
+  
+
+End

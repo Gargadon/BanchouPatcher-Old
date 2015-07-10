@@ -19,7 +19,7 @@ msgid "Ayuda"
 msgstr ""
 
 #: FMain.form:28
-msgid "Acerca de"
+msgid "Acerca de..."
 msgstr ""
 
 #: FMain.form:33
@@ -43,7 +43,7 @@ msgid "Destino"
 msgstr ""
 
 #: FMain.form:60
-msgid "Comprimir archivos en .zip"
+msgid "Comprimir archivos en .zip y eliminar archivos intermedios"
 msgstr ""
 
 #: FMain.form:66

@@ -6,7 +6,7 @@
   { Help Menu
     Text = ("Ayuda")
     { About Menu
-      Text = ("Acerca de") & "..."
+      Text = ("Acerca de...")
       Shortcut = "Ctrl+H"
     }
     { Exit Menu
@@ -31,8 +31,8 @@
     Text = ("Destino")
   }
   { Comprimir CheckBox
-    MoveScaled(51,34,29,5)
-    Text = ("Comprimir archivos en .zip")
+    MoveScaled(25,34,55,5)
+    Text = ("Comprimir archivos en .zip y eliminar archivos intermedios")
     Value = CheckBox.True
   }
   { Nombre Label

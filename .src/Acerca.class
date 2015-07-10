@@ -24,3 +24,15 @@ Public Sub Form_Open()
   
 
 End
+
+Public Sub PictureBox1_MouseDown()
+
+  
+
+End
+
+Public Sub TextLabel1_MouseDown()
+
+  
+
+End
