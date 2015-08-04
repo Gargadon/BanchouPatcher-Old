@@ -11,7 +11,6 @@ Component=gb.gui
 Component=gb.form
 Description="xdelta3 GUI written in Gambas3."
 Authors="David Kantun (Gargadon)"
-Environment="GB_GUI=gb.qt4"
 TabSize=2
 Translate=1
 Language=es
@@ -19,7 +18,7 @@ Maintainer=David Kantun (Gargadon)
 Address=dkantun@gmail.com
 Url=www.gargadon.info
 License=General Public License
-PackageName=banchoupatcher-2.0.5
+PackageName=banchoupatcher-2.0.6
 CreateEachDirectory=1
 Packager=1
 Systems=debian
