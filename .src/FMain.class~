@@ -66,11 +66,11 @@ Public Sub PatchNow_Click()
     Else
   Estado.Text = ("Creando scripts del parche...")
   ' Creamos los scripts...
-  Try File.Save(DirParche &/ PrefijoParche & ".bat", "@echo off\necho  Archivo generado por BanchouPatcher.\necho  Archivo de origen: " & NombreOrigen & "\necho  Archivo de destino: " & NombreDestino & "\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\npause")
+  Try File.Save(DirParche &/ PrefijoParche & ".bat", "@echo off\necho  Archivo generado por BanchouPatcher.\necho  Archivo de origen: " & NombreOrigen & "\necho  Archivo de destino: " & NombreDestino & "\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\necho  Borrando archivos intermedios...\ndel \"" & PrefijoParche & ".vcdiff\"\ndel \"" & PrefijoParche & ".bat\"\ndel \"" & PrefijoParche & "\"\ndel \"" & "xdelta3.exe\"\ndel \"leeme.txt\"\npause")
   If Error Then
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
-  Try File.Save(DirParche &/ PrefijoParche, "#!/bin/bash\necho \" Archivo generado por BanchouPatcher.\"\necho \" Archivo de origen: " & NombreOrigen & "\"\necho \" Archivo de destino: " & NombreDestino & "\"\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\nif [ \"$?\" = \"0\" ]; then echo \" Parche aplicado correctamente.\" \nelse\necho \" Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio.\"\nfi ")
+  Try File.Save(DirParche &/ PrefijoParche, "#!/bin/bash\necho \" Archivo generado por BanchouPatcher.\"\necho \" Archivo de origen: " & NombreOrigen & "\"\necho \" Archivo de destino: " & NombreDestino & "\"\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\nif [ \"$?\" = \"0\" ]\nthen\n echo \" Parche aplicado correctamente.\" \n echo \" Borrando archivos intermedios...\" \n rm \"" & PrefijoParche & ".vcdiff\"\n rm \"" & PrefijoParche & ".bat\"\n rm \"" & PrefijoParche & "\"\n rm \"xdelta3.exe\"\n rm \"leeme.txt\" \nelse\n echo \" Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio.\"\nfi ")
   If Error Then
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
@@ -78,15 +78,18 @@ Public Sub PatchNow_Click()
   Estado.Text = ("Creando parche...")
   Try Exec ["xdelta3", "-e", "-s", PathOrigen, PathDestino, DirParche &/ PrefijoParche & ".vcdiff"] Wait
   If Error Then
+    Message.Error("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
   ' Ponemos permisos de ejecutable al archivo...
    Try Exec ["chmod", "+x", DirParche &/ PrefijoParche] Wait
   If Error Then
+    Message.Error("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
       Try File.Save(DirParche &/ "leeme.txt", TextoLeeme)
     If Error Then
+    Message.Error("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
     Endif
     Copy "/opt/BanchouPatcher/xdelta3.exe" To DirParche &/ "xdelta3.exe"
@@ -94,6 +97,7 @@ Public Sub PatchNow_Click()
     Estado.Text = ("Empaquetando archivos intermedios dentro de un ZIP...")
     Try Exec ["zip", "-j", DirParche &/ PrefijoParche & ".zip", DirParche &/ PrefijoParche & ".vcdiff", DirParche &/ PrefijoParche, DirParche &/ PrefijoParche & ".bat", DirParche &/ "leeme.txt", DirParche &/ "xdelta3.exe"] Wait
       If Error Then
+    Message.Error("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
     Else
           Estado.Text = ("Borrando archivos intermedios...")
@@ -105,6 +109,7 @@ Public Sub PatchNow_Click()
   Endif
 
     Endif
+      Message.Info("Listo.")
       Estado.Text = ("Listo.")
   Endif
 

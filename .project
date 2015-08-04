@@ -2,8 +2,10 @@
 # Compiled with Gambas 3.5.4
 Title=BanchouPatcher
 Startup=FMain
+UseTerminal=1
+Profiling=1
 Icon=banchoupatcher.png
-Version=2.0.5
+Version=2.0.6
 Component=gb.image
 Component=gb.gui
 Component=gb.form

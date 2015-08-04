@@ -119,28 +119,28 @@ msgid ""
 "No hay solución por el momento."
 msgstr ""
 
-#: FMain.class:65
+#: FMain.class:66
 msgid "Los campos no pueden ir por defecto."
 msgstr ""
 
-#: FMain.class:67
+#: FMain.class:68
 msgid "Creando scripts del parche..."
 msgstr ""
 
-#: FMain.class:71
+#: FMain.class:73
 msgid ""
 "No se puede crear el parche. Verifique los permisos del directorio destino o "
 "pruebe otra ubicación."
 msgstr ""
 
-#: FMain.class:78
+#: FMain.class:81
 msgid "Creando parche..."
 msgstr ""
 
-#: FMain.class:94
+#: FMain.class:100
 msgid "Empaquetando archivos intermedios dentro de un ZIP..."
 msgstr ""
 
-#: FMain.class:99
+#: FMain.class:106
 msgid "Borrando archivos intermedios..."
 msgstr ""
