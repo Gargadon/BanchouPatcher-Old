@@ -2,7 +2,7 @@ BanchouPatcher
 ==============
 BanchouPatcher is a xdelta3 GUI for Linux written on Gambas3.
 
-The latest stable version is 2.0.6, codename Muramasa-Dragon.
+The latest stable version is 2.0.8, codename Muramasa-Dragon.
 
 If you're using Debian/Ubuntu/Mint, please add first my public key:
 ```
@@ -11,9 +11,8 @@ If you're using Debian/Ubuntu/Mint, please add first my public key:
 
 Edit your /etc/apt/sources.list and add one of these lines, depending your branch.
 ```
-deb http://www.gargadon.info/apps stable main # For stable (currently Jessie)
 deb http://www.gargadon.info/apps testing main # For testing (currently Stretch)
-deb http://www.gargadon.info/apps unstable main # For unstable (Sid), maybe can work with Ubuntu 15.04
+deb http://www.gargadon.info/apps unstable main # For unstable (Sid), maybe can work with Ubuntu 16.04
 ```
 
 and install it with
