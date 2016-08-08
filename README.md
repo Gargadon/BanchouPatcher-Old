@@ -6,7 +6,7 @@ The latest stable version is 2.0.6, codename Muramasa-Dragon.
 
 If you're using Debian/Ubuntu/Mint, please add first my public key:
 ```
-# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 735D317D
+# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7E967DC8
 ```
 
 Edit your /etc/apt/sources.list and add one of these lines, depending your branch.
