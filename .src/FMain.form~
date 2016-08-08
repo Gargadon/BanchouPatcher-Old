@@ -6,7 +6,7 @@
   { Help Menu
     Text = ("Ayuda")
     { About Menu
-      Text = ("Acerca de..")
+      Text = ("Acerca de...")
       Shortcut = "Ctrl+H"
     }
     { Exit Menu

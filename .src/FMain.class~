@@ -62,16 +62,19 @@ Public Sub PatchNow_Click()
   Dim PrefijoParche As String = Prefijo.Text
   Dim TextoLeeme As String = ("MUY IMPORTANTE\n\nUsuarios de Windows:\nCopien el archivo a parchar y ejecuten el .bat que viene incluido.\n\nUsuarios de Linux:\nAsegúrense de tener instalada en su distribución el paquete xdelta3. Una vez revisado este punto, copien el archivo a parchar y ejecuten el script en Bash que viene incluido.\n\nUsuarios de Mac:\nNo hay solución por el momento.")
     If PathOrigen = ("Abrir archivo origen") Or PathDestino = ("Abrir archivo destino") Or DirParche = ("Nombre del parche") Or PrefijoParche = ("Abrir directorio destino") Then
+    Message.Error("Los campos no pueden ir por defecto.")
     Estado.Text = ("Los campos no pueden ir por defecto.")
     Else
   Estado.Text = ("Creando scripts del parche...")
   ' Creamos los scripts...
   Try File.Save(DirParche &/ PrefijoParche & ".bat", "@echo off\necho  Archivo generado por BanchouPatcher.\necho  Archivo de origen: " & NombreOrigen & "\necho  Archivo de destino: " & NombreDestino & "\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\necho  Borrando archivos intermedios...\ndel \"" & PrefijoParche & ".vcdiff\"\ndel \"" & PrefijoParche & ".bat\"\ndel \"" & PrefijoParche & "\"\ndel \"" & "xdelta3.exe\"\ndel \"leeme.txt\"\npause")
   If Error Then
+    Message.Error("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
   Try File.Save(DirParche &/ PrefijoParche, "#!/bin/bash\necho \" Archivo generado por BanchouPatcher.\"\necho \" Archivo de origen: " & NombreOrigen & "\"\necho \" Archivo de destino: " & NombreDestino & "\"\nxdelta3 -d -s" & " \"" & NombreOrigen & "\"" & " \"" & PrefijoParche & ".vcdiff\"" & " \"" & NombreDestino & "\"\nif [ \"$?\" = \"0\" ]\nthen\n echo \" Parche aplicado correctamente.\" \n echo \" Borrando archivos intermedios...\" \n rm \"" & PrefijoParche & ".vcdiff\"\n rm \"" & PrefijoParche & ".bat\"\n rm \"" & PrefijoParche & "\"\n rm \"xdelta3.exe\"\n rm \"leeme.txt\" \nelse\n echo \" Ups, algo salió mal. Revisa el nombre de los archivos y que se encuentren en el mismo directorio.\"\nfi ")
   If Error Then
+    Message.Error("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
     Estado.Text = ("No se puede crear el parche. Verifique los permisos del directorio destino o pruebe otra ubicación.")
   Endif
   ' Creamos el parche...

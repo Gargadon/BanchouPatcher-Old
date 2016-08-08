@@ -4,9 +4,12 @@ Count=0
 [DebugWindow]
 Count=0
 
+[Executable]
+Path="BanchouPatcher.gambas"
+
 [OpenFile]
 File[1]=".src/FMain.form"
-File[2]=".src/FMain.class:64.55"
+File[2]=".src/FMain.class:25.16"
 Active=3
 File[3]=".src/Acerca.form"
 Count=3
