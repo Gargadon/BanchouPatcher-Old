@@ -10,7 +10,7 @@ Path="BanchouPatcher.gambas"
 [OpenFile]
 File[1]=".src/FMain.form"
 File[2]=".src/FMain.class:25.16"
-Active=3
+Active=1
 File[3]=".src/Acerca.form"
 Count=3
 

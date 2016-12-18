@@ -1,11 +1,11 @@
 # Gambas Project File 3.0
-# Compiled with Gambas 3.8.4
+# Compiled with Gambas 3.9.1
 Title=BanchouPatcher
 Startup=FMain
 UseTerminal=1
 Profiling=1
 Icon=banchoupatcher.png
-Version=2.0.8
+Version=2.0.9
 Component=gb.image
 Component=gb.gui
 Component=gb.form
@@ -18,10 +18,10 @@ Maintainer=David Kantun (Gargadon)
 Address=dkantun@gmail.com
 Url=www.gargadon.info
 License=General Public License
-PackageName=banchoupatcher-2.0.8
+PackageName=banchoupatcher-2.0.9
 CreateEachDirectory=1
 Packager=1
-Systems=archlinux
+Systems=debian
 Menus=archlinux:"Applications/File Management"
 Groups=archlinux:"utils"
 ExtraDependencies=archlinux:"zip\t\t\nxdelta3\t\t"
