@@ -1,5 +1,7 @@
 BanchouPatcher
 ==============
+# This project is now outdated. Please migrate to BanchouPatcher.
+
 BanchouPatcher is a xdelta3 GUI for Linux written on Gambas3.
 
 The latest stable version is 2.0.9, codename Muramasa-Dragon.
